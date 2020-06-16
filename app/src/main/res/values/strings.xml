@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Fuzzy Photos</string>
+    <string name="welcome">"Welcome !"</string>
+
+    <!-- Login & register screen -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Sign in</string>
+    <string name="logout">Log Out</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">Create a new account</string>
+    <string name="Register">Register</string>
+    <string name="create">Create account</string>
+    <string name="noAccount">"No account yet? Register here!"</string>
+    <string name="account">"Already an account? Login here!"</string>
+
+    <string name="admin_solution">Solution</string>
+    <string name="puzzle_solution">Fill in answer</string>
+
+    <string name="answer">"Answer"</string>
+    <string name="pass">"Pass"</string>
+    <string name="check_answer">"Check answer"</string>
+    <string name="upload">"Upload"</string>
+    <string name="camera">"CAMERA"</string>
+
+    <string name="finished_message">You have finished all available puzzles. Good job!</string>
+</resources>

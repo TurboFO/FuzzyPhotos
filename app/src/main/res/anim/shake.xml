@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Animation moves it from -1 percent of the view's width to 1 percent of the view's width and lasts 1 second (400ms) -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="-1%"
+    android:toXDelta="1%"
+    android:repeatMode="reverse"
+    android:duration="400"
+    android:interpolator="@anim/cycle_3" />

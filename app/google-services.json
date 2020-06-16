@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "210937661349",
+    "firebase_url": "https://fuzzy-photos-764e3.firebaseio.com",
+    "project_id": "fuzzy-photos-764e3",
+    "storage_bucket": "fuzzy-photos-764e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210937661349:android:7b4f23fbd38e3c02828a4c",
+        "android_client_info": {
+          "package_name": "com.group10.fuzzyphotos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210937661349-unmgh78spgsivt2v44v494ult0mbiukf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.group10.fuzzyphotos",
+            "certificate_hash": "e1a7050547b3f5d000c61a3e704c8a243f58efc4"
+          }
+        },
+        {
+          "client_id": "210937661349-mdu1nseqdosj60t726svngvrci6n96ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5V5csqNOsuLtbATAoOaragNs_aCy-fXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210937661349-mdu1nseqdosj60t726svngvrci6n96ro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

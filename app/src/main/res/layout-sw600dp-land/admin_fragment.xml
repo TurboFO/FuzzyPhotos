@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/puzzle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Fragments.AdminFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/btn_uploadpuzzle"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:background="@drawable/rounded_button"
+            android:enabled="true"
+            android:text="@string/upload"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_solution"
+            app:layout_constraintStart_toStartOf="@+id/et_solution"
+            app:layout_constraintTop_toBottomOf="@+id/et_solution"
+            app:layout_constraintVertical_bias="0.279" />
+
+        <EditText
+            android:id="@+id/et_solution"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_text"
+            android:hint="@string/answer"
+            android:inputType="textShortMessage"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="true"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.378" />
+
+        <ImageButton
+            android:id="@+id/ibtn_getpicture"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="32dp"
+            android:background="@android:drawable/ic_menu_camera"
+            android:enabled="false"
+
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

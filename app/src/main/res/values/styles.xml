@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- New design for the Toasts displayed if user gives correct answer -->
+    <style name="standardToast">
+        <item name="stColorBackground">@color/colorPrimary</item>
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextBold">true</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stStrokeColor">#000</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stRadius">3dp</item>
+        <item name="stGravity">top</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <!-- New design for the Toasts displayed if user gives correct answer -->
+    <style name="correctAnswerToast">
+        <item name="stColorBackground">#94ffab</item>
+        <item name="stTextColor">#000</item>
+        <item name="stTextBold">true</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stIconStart">@drawable/ic_check_black</item>
+        <item name="stStrokeColor">#000</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stRadius">3dp</item>
+        <item name="stGravity">top</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <!-- New design for the Toasts displayed if user passes puzzle -->
+        <style name="passedPuzzleToast">
+        <item name="stColorBackground">#FF9494</item>
+        <item name="stTextColor">#000</item>
+        <item name="stTextBold">true</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stIconStart">@drawable/ic_close_black</item>
+        <item name="stStrokeColor">#000</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stRadius">3dp</item>
+        <item name="stGravity">top</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+</resources>

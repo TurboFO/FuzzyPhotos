@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/puzzle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Fragments.PuzzleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_puzzle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_pass"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/rounded_button"
+            android:enabled="true"
+            android:text="@string/pass"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_submit"
+            app:layout_constraintStart_toStartOf="@+id/btn_submit"
+            app:layout_constraintTop_toTopOf="@+id/btn_submit" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/rounded_button"
+            android:enabled="true"
+            android:text="@string/check_answer"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_answer"
+            app:layout_constraintVertical_bias="0.235" />
+
+        <ProgressBar
+            android:id="@+id/pb_picture_retrieval"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="26dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_picture"
+            app:layout_constraintEnd_toEndOf="@+id/iv_picture"
+            app:layout_constraintStart_toStartOf="@+id/iv_picture"
+            app:layout_constraintTop_toTopOf="@+id/iv_picture" />
+
+        <TextView
+            android:id="@+id/solutionLength"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:gravity="bottom|center_horizontal"
+            android:letterSpacing="0.40"
+            android:textSize="34sp"
+            android:typeface="monospace"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_answer" />
+
+        <EditText
+            android:id="@+id/et_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="300dp"
+            android:background="@color/colorWhite"
+            android:gravity="bottom|left"
+            android:inputType="textVisiblePassword"
+            android:letterSpacing="0.25"
+            android:selectAllOnFocus="true"
+            android:textSize="40sp"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/solutionLength"
+            app:layout_constraintStart_toStartOf="@+id/solutionLength"
+            app:layout_constraintTop_toBottomOf="@+id/iv_picture"
+            app:layout_constraintVertical_bias="0.837" />
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/blurred" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_finished"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_finished_message"
+            android:layout_width="305dp"
+            android:layout_height="75dp"
+            android:text="@string/finished_message"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/finished_message" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/memeface"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.784" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
